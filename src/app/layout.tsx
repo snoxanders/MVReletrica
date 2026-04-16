@@ -33,6 +33,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_PT",
     siteName: "MVR - Remodelações e Eletricidade",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MVR - Remodelações e Eletricidade",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MVR - Remodelações e Eletricidade em Lisboa",
+    description:
+      "Serviços profissionais de eletricidade e remodelação. Peça orçamento grátis.",
+    images: ["/images/og-image.png"],
   },
   robots: {
     index: true,
