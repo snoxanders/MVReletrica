@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt" className={`${inter.variable} scroll-smooth`}>
+    <html lang="pt" className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         <JsonLd />
       </head>
