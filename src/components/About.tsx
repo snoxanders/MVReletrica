@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionTitle from "./ui/SectionTitle";
 import { company } from "../data/company";
@@ -35,11 +36,14 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-[4/3] bg-gradient-to-br from-navy to-navy-light rounded-2xl flex items-center justify-center overflow-hidden">
-              <div className="text-center p-8">
-                <MdHandyman size={80} className="text-white/20 mx-auto mb-4" />
-                <p className="text-white/40 text-sm">Foto da equipa MVR</p>
-              </div>
+            <div className="relative aspect-[4/3] bg-gradient-to-br from-navy/5 via-white to-orange/5 rounded-2xl overflow-hidden border border-border shadow-sm">
+              <Image
+                src="/images/logo-transparent.png"
+                alt="MVR - Remodelações e Eletricidade"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain p-10 md:p-14"
+              />
             </div>
             {/* Floating card */}
             <div className="absolute -bottom-6 -right-6 bg-orange text-white rounded-2xl p-5 shadow-xl shadow-orange/30 hidden md:block">
