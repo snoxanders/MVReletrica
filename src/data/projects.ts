@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   category: string;
   description: string;
+  image: string;
 }
 
 export const projects: Project[] = [
@@ -11,36 +12,42 @@ export const projects: Project[] = [
     title: "Remodelação Completa de Cozinha",
     category: "Cozinhas",
     description: "Transformação total com novos armários, bancada e iluminação LED.",
+    image: "/images/projects/cozinha-01.jpg",
   },
   {
     id: 2,
-    title: "Apartamento T2 - Renovação Total",
+    title: "Sala com Iluminação de Autor",
     category: "Apartamentos",
-    description: "Remodelação integral incluindo elétrica, pavimentos e pintura.",
+    description: "Sala de jantar com candeeiros dourados e iluminação LED integrada.",
+    image: "/images/projects/sala-01.jpg",
   },
   {
     id: 3,
-    title: "Instalação Elétrica Residencial",
+    title: "Quadro Elétrico Profissional",
     category: "Eletricidade",
-    description: "Nova instalação elétrica completa com quadro e diferencial.",
+    description: "Instalação de quadro Hager — capacidade e organização para uso residencial e comercial.",
+    image: "/images/projects/quadro-01.jpg",
   },
   {
     id: 4,
-    title: "Casa de Banho Moderna",
+    title: "Casa de Banho Contemporânea",
     category: "Casas de Banho",
-    description: "Renovação com azulejos contemporâneos e iluminação embutida.",
+    description: "Acabamentos elegantes com iluminação embutida e loiças sanitárias modernas.",
+    image: "/images/projects/casa-banho-01.jpg",
   },
   {
     id: 5,
-    title: "Iluminação de Escritório",
+    title: "Sistema Fotovoltaico",
     category: "Eletricidade",
-    description: "Projeto de iluminação LED eficiente para espaço comercial.",
+    description: "Painéis solares em cobertura — eficiência energética e redução de custos.",
+    image: "/images/projects/fotovoltaico-01.jpg",
   },
   {
     id: 6,
-    title: "Remodelação de Sala de Estar",
+    title: "Remodelação de Espaço Comercial",
     category: "Apartamentos",
-    description: "Renovação com piso flutuante, sancas de luz e pintura decorativa.",
+    description: "Salão profissional renovado — elétrica, iluminação e acabamentos de raiz.",
+    image: "/images/projects/salao-01.jpg",
   },
 ];
 

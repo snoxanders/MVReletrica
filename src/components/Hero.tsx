@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MdArrowForward, MdPlayArrow } from "react-icons/md";
 
@@ -10,8 +11,15 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy to-navy-light" />
+      <Image
+        src="/images/hero/corredor-led.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        preload
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 via-navy/85 to-navy-light/75" />
 
       {/* Decorative grid pattern */}
       <div
