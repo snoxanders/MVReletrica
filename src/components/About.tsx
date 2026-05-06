@@ -68,10 +68,20 @@ export default function About() {
               é uma referência de qualidade em Lisboa e arredores.
             </p>
             <p className="text-text-secondary leading-relaxed mb-4">
-              Liderada por <strong className="text-navy">{company.owner}</strong>,
-              a nossa equipa combina conhecimento técnico com atenção ao detalhe
-              para transformar cada espaço. Desde pequenas reparações elétricas
-              a remodelações completas de apartamentos.
+              Liderada pelos sócios{" "}
+              {company.partners.map((name, idx) => (
+                <span key={name}>
+                  <strong className="text-navy">{name}</strong>
+                  {idx < company.partners.length - 2
+                    ? ", "
+                    : idx === company.partners.length - 2
+                      ? " e "
+                      : ""}
+                </span>
+              ))}
+              , a nossa equipa combina conhecimento técnico com atenção ao
+              detalhe para transformar cada espaço. Desde pequenas reparações
+              elétricas a remodelações completas de apartamentos.
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
               Trabalhamos com materiais de qualidade e garantimos transparência

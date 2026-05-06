@@ -2,6 +2,11 @@ export const company = {
   name: "MVR - Remodelações e Eletricidade",
   shortName: "MVR",
   owner: "André da Silva Mota",
+  partners: [
+    "André da Silva Mota",
+    "Fernando Luis Vieira",
+    "Vitor Eduardo Gomes Rodrigues",
+  ],
   address: "Rua Padre Cruz Nº49, Famões",
   phone: "+351 927 769 445",
   phoneRaw: "351927769445",
